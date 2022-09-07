@@ -22,6 +22,7 @@ import java.util.List;
 
 @NativePlugin
 public class Flipper extends Plugin {
+
   private static final String TAG = "Flipper";
 
   private Context applicationContext;
@@ -102,7 +103,6 @@ public class Flipper extends Plugin {
               new SqliteDatabaseDriver(
                 this.applicationContext,
                 new SqliteDatabaseProvider() {
-
                   @Override
                   public List<File> getDatabaseFiles() {
                     List<File> databaseFiles = new ArrayList<>();

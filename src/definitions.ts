@@ -1,9 +1,3 @@
-declare module "@capacitor/core" {
-  interface PluginRegistry {
-    Flipper: FlipperPlugin;
-  }
-}
-
 export interface FlipperPlugin {
   initialize(options: InitializeOptions): Promise<void>;
 

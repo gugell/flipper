@@ -49,7 +49,7 @@ public class Flipper: CAPPlugin {
             if (self.layoutInspectorEnabled) {
                 let sharedApplication = UIApplication.shared
                 let layoutDescriptorMapper = SKDescriptorMapper(defaults: ())
-                FlipperKitLayoutComponentKitSupport.setUpWith(layoutDescriptorMapper)
+                FlipperKitLayoutPlugin.init(rootNode: sharedApplication, with: layoutDescriptorMapper!)
                 client?.add(FlipperKitLayoutPlugin(rootNode: sharedApplication, with: layoutDescriptorMapper!))
             }
     
